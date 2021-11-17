@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vaadin Radiance Testing Sandbox</title>
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    </style>
+  </head>
+  <body class="ids-theme--light">
+    <div style="max-width: 980px; margin: 0 auto">
+      <h1>Combo Box</h1>
+      <vaadin-combo-box label="Label"></vaadin-combo-box>
+      <script>
+        customElements.whenDefined('vaadin-combo-box').then(function () {
+          const comboBox = document.querySelectorAll('vaadin-combo-box');
+          comboBox[0].items = ['Option one', 'Option two'];
+        });
+      </script>
+      <h1>Button</h1>
+      <div>
+        <vaadin-button class="ids-vaadin-button--primary"
+          >Primary</vaadin-button
+        >
+        <vaadin-button>Default</vaadin-button>
+        <vaadin-button class="ids-vaadin-button--gray"
+          >Default gray</vaadin-button
+        >
+        <vaadin-button class="ids-vaadin-button--secondary"
+          >Secondary</vaadin-button
+        >
+        <vaadin-button
+          class="ids-vaadin-button--secondary ids-vaadin-button--gray"
+          >Secondary gray</vaadin-button
+        >
+        <vaadin-button class="ids-vaadin-button--tertiary"
+          >Tertiary</vaadin-button
+        >
+        <vaadin-button
+          class="ids-vaadin-button--tertiary ids-vaadin-button--gray"
+          >Tertiary gray</vaadin-button
+        >
+      </div>
+      <br />
+      <div>
+        <vaadin-button class="ids-vaadin-button--primary" disabled
+          >Primary</vaadin-button
+        >
+        <vaadin-button class="ids-vaadin-button--secondary" disabled
+          >Secondary</vaadin-button
+        >
+        <vaadin-button
+          class="ids-vaadin-button--secondary ids-vaadin-button--gray"
+          disabled
+          >Secondary gray</vaadin-button
+        >
+        <vaadin-button class="ids-vaadin-button--tertiary" disabled
+          >Tertiary</vaadin-button
+        >
+        <vaadin-button
+          class="ids-vaadin-button--tertiary ids-vaadin-button--gray"
+          disabled
+          >Tertiary gray</vaadin-button
+        >
+      </div>
+      <div>
+        <h1>Tabs</h1>
+        <div style="margin-bottom: 20px">
+          <strong>Default tabs</strong>
+          <vaadin-tabs>
+            <vaadin-tab>Tab one</vaadin-tab>
+            <vaadin-tab>Tab two</vaadin-tab>
+            <vaadin-tab>Tab three</vaadin-tab>
+            <vaadin-tab disabled>Disabled tab</vaadin-tab>
+          </vaadin-tabs>
+        </div>
+
+        <div style="margin-bottom: 20px">
+          <strong>Small tabs</strong>
+          <vaadin-tabs class="ids-tabs--small">
+            <vaadin-tab>Tab one</vaadin-tab>
+            <vaadin-tab>Tab two</vaadin-tab>
+            <vaadin-tab>Tab three</vaadin-tab>
+          </vaadin-tabs>
+        </div>
+
+        <div style="margin-bottom: 20px">
+          <strong>Vertical tabs</strong>
+          <vaadin-tabs orientation="vertical">
+            <vaadin-tab>Tab one</vaadin-tab>
+            <vaadin-tab>Tab two</vaadin-tab>
+            <vaadin-tab>Tab three</vaadin-tab>
+          </vaadin-tabs>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div style="flex: 50%">
+          <h1>Checkbox</h1>
+          <div>
+            <vaadin-checkbox class="ids-checkbox" value="Option" checked
+              >Default item</vaadin-checkbox
+            >
+          </div>
+          <div>
+            <vaadin-checkbox class="ids-checkbox" value="Option"
+              >Default item</vaadin-checkbox
+            >
+          </div>
+          <br />
+          <div>
+            <vaadin-checkbox
+              class="ids-checkbox"
+              value="Option"
+              checked
+              disabled
+              >Disabled item</vaadin-checkbox
+            >
+          </div>
+          <div>
+            <vaadin-checkbox class="ids-checkbox" value="Option2" disabled
+              >Disabled item</vaadin-checkbox
+            >
+          </div>
+          <br />
+          <div>
+            <vaadin-checkbox class="ids-checkbox" value="Option" indeterminate
+              >Indeterminate</vaadin-checkbox
+            >
+          </div>
+          <br />
+          <div><small>Standalone Vaadin</small></div>
+          <div>
+            <vaadin-checkbox
+              class="ids-checkbox ids-checkbox-standalone"
+              value="Option"
+            ></vaadin-checkbox>
+          </div>
+          <div>
+            <vaadin-checkbox
+              class="ids-checkbox ids-checkbox-standalone"
+              value="Option"
+              checked
+            ></vaadin-checkbox>
+          </div>
+        </div>
+        <div style="flex: 50%">
+          <h1>Radio Button</h1>
+          <div>
+            <vaadin-radio-button class="ids-radio">Default</vaadin-radio-button>
+          </div>
+          <div>
+            <vaadin-radio-button class="ids-radio" checked
+              >Checked</vaadin-radio-button
+            >
+          </div>
+          <div>
+            <vaadin-radio-button class="ids-radio" disabled
+              >Disabled</vaadin-radio-button
+            >
+          </div>
+          <div>
+            <vaadin-radio-button class="ids-radio" checked disabled
+              >Disabled checked</vaadin-radio-button
+            >
+          </div>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div style="flex: 50%">
+          <h1>Text Field</h1>
+          <p><vaadin-text-field label="Label"></vaadin-text-field></p>
+          <div style="display: none; position: absolute; top: 38px">
+            <lib-input label="Label"></lib-input>
+          </div>
+          <p>
+            <vaadin-text-field
+              label="First name"
+              value="John"
+            ></vaadin-text-field>
+          </p>
+          <p>
+            <vaadin-text-field
+              label="Placeholder"
+              placeholder="e.g. John"
+            ></vaadin-text-field>
+          </p>
+          <p>
+            <vaadin-text-field label="Disabled" disabled></vaadin-text-field>
+          </p>
+          <p>
+            <vaadin-text-field
+              label="Required"
+              required
+              helper-text="Required"
+            ></vaadin-text-field>
+          </p>
+          <p>
+            <vaadin-text-field
+              label="Password hint"
+              helper-text="Choose a strong password"
+            >
+            </vaadin-text-field>
+          </p>
+          <p>
+            <vaadin-text-field
+              label="With error message"
+              value="Invalid"
+              pattern="[0-9]+"
+              invalid
+              error-message="Numbers only!"
+            >
+            </vaadin-text-field>
+          </p>
+          <p>
+            <vaadin-text-field
+              label="Readonly"
+              value="Readonly"
+              readonly
+            ></vaadin-text-field>
+          </p>
+        </div>
+        <div style="flex: 50%">
+          <h1>Number Field</h1>
+          <p><vaadin-number-field has-controls></vaadin-number-field></p>
+          <p>
+            <vaadin-number-field has-controls value="1"></vaadin-number-field>
+          </p>
+          <p>
+            <vaadin-number-field
+              has-controls
+              value="1"
+              min="1"
+              max="10"
+            ></vaadin-number-field>
+          </p>
+          <p>
+            <vaadin-number-field has-controls invalid></vaadin-number-field>
+          </p>
+          <p>
+            <vaadin-number-field has-controls disabled></vaadin-number-field>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

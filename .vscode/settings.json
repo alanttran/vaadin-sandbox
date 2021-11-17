@@ -1,0 +1,35 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "prettier.enable": true,
+    "prettier.trailingComma": "none",
+    "prettier.tabWidth": 2,
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "prettier.bracketSpacing": true,
+    "prettier.arrowParens": "always",
+    "eslint.validate": ["typescript"],
+    "cSpell.words": [
+      "checkmark",
+      "close",
+      "custom",
+      "dropdowns",
+      "illumina",
+      "markdown",
+      "Prefilled",
+      "subcomponents",
+      "transclude",
+      "vaadin",
+      "viewports"
+    ]
+  }
+  
