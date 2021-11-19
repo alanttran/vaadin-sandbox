@@ -72,3 +72,43 @@ vaadin-component:not(something) /*-->*/ :host(:not(something))
 vaadin-component::part(label) /*-->*/ [part='label']
 vaadin-component:hover /*-->*/ :host(:hover)
 ```
+
+## Vaadin complex components
+
+This lists out complex components' API and subcomponents that may need their own individual stylesheets to be overriden properly.
+
+- Vaadin Combobox
+  - `vaadin-combo-box-dropdown`
+  - `vaadin-combo-box-dropdown-wrapper`
+  - `vaadin-combo-box-item`
+  - `vaadin-combo-box-light`
+  - `vaadin-combo-box-overlay`
+  - Uses
+    - `vaadin-text-field`
+    - `vaadin-list-box`
+- Vaadin Grid
+  - `vaadin-grid-column`
+  - `vaadin-grid-column-group`
+  - `vaadin-grid-selection-column`
+  - `vaadin-grid-cell-content` (might not have shadowDOM)
+  - `vaadin-grid-filter-column`
+  - `vaadin-grid-filter`
+  - `vaadin-grid-sort-column`
+  - `vaadin-grid-sorter`
+  - `vaadin-grid-templatizer`
+  - `vaadin-grid-tree-column`
+  - `vaadin-grid-tree-toggle`
+  - Uses
+    - `vaadin-checkbox`
+- Vaadin Notification
+  - `vaadin-notification-card`
+  - `vaadin-notification-container`
+  - Uses
+    - `vaadin-button` (optional)
+- Vaadin Dialog
+  - `vaadin-dialog-overlay`
+  - Uses
+    - `vaadin-button` (optional)
+- Vaadin Menu Bar
+  - `vaadin-menu-bar-button`
+  - `vaadin-menu-bar-submenu`
