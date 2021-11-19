@@ -1,5 +1,7 @@
 :host {
-  color: var(--ids-colors-type-body);
+  --ids-vdn-color-type-body: black;
+  color: var(--ids-vdn-color-type-body);
+  font-family: 'Inter';
 }
 
 [part='label'] {

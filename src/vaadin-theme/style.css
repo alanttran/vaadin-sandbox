@@ -1,0 +1,326 @@
+.ids-theme--light {
+  /* should have all global CSS variables compiled here */
+  --ids-border-widths-chunky: 8px;
+  --ids-border-widths-fat: 4px;
+  --ids-border-widths-regular: 2px;
+  --ids-border-widths-hairline: 1px;
+  --ids-border-widths-button: 0;
+  --ids-border-widths-none: 0;
+  --ids-colors-ctas-hover-on-multi: rgba(255, 255, 255, 0.1);
+  --ids-colors-ctas-default-on-multi: rgba(255, 255, 255, 0.2);
+  --ids-colors-ctas-focus-on-multi: rgba(255, 255, 255, 0.6);
+  --ids-colors-alerts-error: rgba(221, 32, 60, 1);
+  --ids-colors-alerts-warning: rgba(252, 187, 62, 1);
+  --ids-colors-alerts-success: rgba(15, 195, 119, 1);
+  --ids-colors-components-no-name-yet: rgba(173, 171, 173, 1);
+  --ids-colors-components-disabled: rgba(193, 192, 194, 1);
+  --ids-colors-components-chips: rgba(224, 224, 224, 1);
+  --ids-colors-components-white: rgba(255, 255, 255, 1);
+  --ids-colors-components-controls: rgba(91, 87, 91, 1);
+  --ids-colors-components-focus: rgba(78, 96, 238, 0.6);
+  --ids-colors-components-select: rgba(78, 96, 238, 0.1);
+  --ids-colors-components-selected-row: rgba(247, 247, 247, 1);
+  --ids-colors-components-labels: rgba(121, 119, 122, 1);
+  --ids-colors-type-disabled: rgba(193, 192, 194, 1);
+  --ids-colors-type-secondary: rgba(90, 87, 91, 1);
+  --ids-colors-type-body: rgba(70, 66, 71, 1);
+  --ids-colors-type-headline: rgba(49, 45, 50, 1);
+  --ids-colors-backgrounds-core-gradient: radial-gradient(
+    129.7% 129.7% at 38% -17.6%,
+    rgba(98, 132, 248, 1) 0%,
+    rgba(82, 118, 235, 1) 23%,
+    rgba(82, 118, 235, 1) 57%,
+    rgba(210, 161, 197, 1) 100%
+  );
+  --ids-colors-backgrounds-card-base: rgba(255, 255, 255, 1);
+  --ids-colors-backgrounds-page: rgba(245, 245, 245, 1);
+  --ids-colors-backgrounds-separators: rgba(214, 213, 214, 1);
+  --ids-colors-ctas-interactive-gradient: linear-gradient(
+    8.62deg,
+    rgba(34, 93, 230, 1) 10%,
+    rgba(166, 100, 253, 1) 100%
+  );
+  --ids-colors-ctas-hover-gradient: linear-gradient(
+    8.62deg,
+    rgba(0, 69, 230, 1) 10%,
+    rgba(138, 51, 253, 1) 100%
+  );
+  --ids-colors-ctas-primary: rgba(78, 96, 238, 1);
+  --ids-colors-alerts-neutral: rgba(15, 130, 195, 1);
+  --ids-colors-data-vis-dv-1: rgba(84, 135, 253, 1);
+  --ids-colors-data-vis-dv-2: rgba(232, 115, 49, 1);
+  --ids-colors-data-vis-dv-3: rgba(119, 35, 230, 1);
+  --ids-colors-data-vis-dv-4: rgba(255, 80, 151, 1);
+  --ids-colors-data-vis-dv-5: rgba(238, 191, 37, 1);
+  --ids-colors-generic-gray-100: rgba(91, 87, 91, 1);
+  --ids-font-families-inter: Inter;
+  --ids-font-sizes-label: 0.75rem;
+  --ids-font-sizes-body: 0.875rem;
+  --ids-font-sizes-navigation: 1.125rem;
+  --ids-font-sizes-section: 1.5rem;
+  --ids-font-sizes-title: 2rem;
+  --ids-font-sizes-headline: 3rem;
+  --ids-font-sizes-display: 3.5rem;
+  --ids-font-weights-light: 300;
+  --ids-font-weights-regular: 400;
+  --ids-font-weights-medium: 500;
+  --ids-font-weights-semi-bold: 600;
+  --ids-letter-spacings-label-emphasis: 0px;
+  --ids-letter-spacings-label: 0px;
+  --ids-letter-spacings-body-emphasis: 0px;
+  --ids-letter-spacings-body: 0px;
+  --ids-letter-spacings-navigation-emphasis: 0px;
+  --ids-letter-spacings-navigation: 0px;
+  --ids-letter-spacings-section-emphasis: 0px;
+  --ids-letter-spacings-section: 0px;
+  --ids-letter-spacings-title: 0px;
+  --ids-letter-spacings-headline: -1px;
+  --ids-letter-spacings-display: -1px;
+  --ids-letter-spacings-regular: 0px;
+  --ids-letter-spacings-condensed: -1px;
+  --ids-letter-spacings-expanded: 1px;
+  --ids-line-heights-label: 1.4;
+  --ids-line-heights-body: 1.4;
+  --ids-line-heights-navigation: 1.3;
+  --ids-line-heights-section: 1.3;
+  --ids-line-heights-title: 1.3;
+  --ids-line-heights-headline: 1.2;
+  --ids-line-heights-display: 1.2;
+  --ids-media-queries-mobile-sm: 32em;
+  --ids-media-queries-mobile-md: 48em;
+  --ids-media-queries-mobile-lg: 58em;
+  --ids-media-queries-mobile-max: 76.7em;
+  --ids-media-queries-tablet-min: 76.8em;
+  --ids-media-queries-tablet-max: 102.4em;
+  --ids-media-queries-desktop-md: 118em;
+  --ids-media-queries-desktop-lg: 144em;
+  --ids-media-queries-wide: 155.6em;
+  --ids-opacities-solid: 1;
+  --ids-opacities-disabled: 0.65;
+  --ids-opacities-opaque: 0.5;
+  --ids-opacities-semi-opaque: 0.2;
+  --ids-opacities-semi-transparent: 0.1;
+  --ids-opacities-transparent-transparent: 0;
+  --ids-radii-circle: 50px;
+  --ids-radii-button: 50px;
+  --ids-radii-soft: 8px;
+  --ids-radii-rounded: 4px;
+  --ids-radii-hard: 0px;
+  --ids-shadows-modal: 0 20px 80px rgba(49, 45, 50, 0.1);
+  --ids-shadows-card-hover: 0 20px 40px rgba(49, 45, 50, 0.2);
+  --ids-shadows-dropdown-menu: 0 10px 15px rgba(49, 45, 50, 0.2);
+  --ids-shadows-spotlight-card: 0 5px 15px rgba(49, 45, 50, 0.1);
+  --ids-shadows-card-default: 0 0 0 rgba(0, 0, 0, 0);
+  --ids-spacing-xx-small: 2px;
+  --ids-spacing-x-small: 4px;
+  --ids-spacing-small: 8px;
+  --ids-spacing-medium: 16px;
+  --ids-spacing-large: 24px;
+  --ids-spacing-x-large: 32px;
+  --ids-spacing-xx-large: 48px;
+  --ids-spacing-display-small: 56px;
+  --ids-spacing-display-medium: 80px;
+  --ids-spacing-display-large: 96px;
+  --ids-z-indices-top: 100;
+  --ids-z-indices-focus: 10;
+  --ids-z-indices-higher: 2;
+  --ids-z-indices-high: 1;
+  --ids-z-indices-regular-regular: 0;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('Inter (web)/Inter-Thin.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-Thin.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url('Inter (web)/Inter-ThinItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-ThinItalic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('Inter (web)/Inter-ExtraLight.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-ExtraLight.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url('Inter (web)/Inter-ExtraLightItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-ExtraLightItalic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('Inter (web)/Inter-Light.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-Light.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('Inter (web)/Inter-LightItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-LightItalic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Inter (web)/Inter-Regular.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-Regular.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Inter (web)/Inter-Italic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-Italic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('Inter (web)/Inter-Medium.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-Medium.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('Inter (web)/Inter-MediumItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-MediumItalic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('Inter (web)/Inter-SemiBold.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-SemiBold.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('Inter (web)/Inter-SemiBoldItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-SemiBoldItalic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('Inter (web)/Inter-Bold.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-Bold.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('Inter (web)/Inter-BoldItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-BoldItalic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('Inter (web)/Inter-ExtraBold.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-ExtraBold.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('Inter (web)/Inter-ExtraBoldItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-ExtraBoldItalic.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('Inter (web)/Inter-Black.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-Black.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('Inter (web)/Inter-BlackItalic.woff2?v=3.19') format('woff2'),
+    url('Inter (web)/Inter-BlackItalic.woff?v=3.19') format('woff');
+}
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  font-display: swap;
+  src: url('Inter (web)/Inter-roman.var.woff2?v=3.19')
+      format('woff2 supports variations(gvar)'),
+    url('Inter (web)/Inter-roman.var.woff2?v=3.19') format('woff2-variations'),
+    url('Inter (web)/Inter-roman.var.woff2?v=3.19') format('woff2');
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  font-display: swap;
+  src: url('Inter (web)/Inter-italic.var.woff2?v=3.19')
+      format('woff2 supports variations(gvar)'),
+    url('Inter (web)/Inter-italic.var.woff2?v=3.19') format('woff2-variations'),
+    url('Inter (web)/Inter-italic.var.woff2?v=3.19') format('woff2');
+}
+/* --------------------------------------------------------------------------
+[EXPERIMENTAL] Multi-axis, single variable font.
+
+Slant axis is not yet widely supported (as of February 2019) and thus this
+multi-axis single variable font is opt-in rather than the default.
+
+When using this, you will probably need to set font-variation-settings
+explicitly, e.g.
+
+  * { font-variation-settings: "slnt" 0deg }
+  .italic { font-variation-settings: "slnt" 10deg }
+
+*/
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+  src: url('Inter (web)/Inter.var.woff2?v=3.19') format('woff2-variations'),
+    url('Inter (web)/Inter.var.woff2?v=3.19') format('woff2');
+}
